@@ -1,0 +1,11 @@
+FROM ubuntu:16.04
+MAINTAINER subicura@subicura.com
+RUN apt-get -y update
+
+# java1.8
+FROM openjdk:8	
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+RUN javac TestMain.java
+CMD ["java", "TestMain"]
+
