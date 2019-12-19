@@ -1,7 +1,7 @@
 # abilists_docker
 This is a docker file for abilists with tomcat
 
-## abilists_docker njoonk$ docker push abilists/tomcat8.5:v0.4.1
+## abilists_docker abilists$ docker push abilists/tomcat8.5:v0.4.1
 ```
 The push refers to repository [docker.io/abilists/tomcat8.5]
 7af039bb9a63: Pushed 
