@@ -39,9 +39,17 @@ $ docker load --input ./images/docker-abilists-tomcat8.5-0.4.1.tar
 ## How to run the image on Docker.
 ```
 
-docker container run -p 80:8080 -d -v ~/.abilists:/root/.abilists abilists/tomcat8.5:v0.4.1
+docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:v0.4.1
 ```
 
+## troubleshooting
+docker: Error response from daemon: driver failed programming external connectivity on endpoint vigorous_mendel (eb79eda105edd397cc44fa381b37e090f0368bad3c44ebca87017b7633834583): Bind for 0.0.0.0:80 failed: port is already allocated.
+```
+$docker container ls
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
+44efe95120d4        abilists:v0.4.1     "catalina.sh run"   15 minutes ago      Up 15 minutes       0.0.0.0:80->8080/tcp   epic_williams
+$ docker stop 44efe95120d4
+```
 ## How to stop the image on Docker.
 ```
 $ docker ps -a
