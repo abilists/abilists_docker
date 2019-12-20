@@ -39,7 +39,7 @@ $ docker load --input ./images/docker-abilists-tomcat8.5-0.4.1.tar
 ## How to run the image on Docker.
 ```
 
-docker container run -p 80:8080 -d -v ~/.abilists:/root/.abilists abilists:v0.4.1
+docker container run -p 80:8080 -d -v ~/.abilists:/root/.abilists abilists/tomcat8.5:v0.4.1
 ```
 
 ## How to stop the image on Docker.
