@@ -3,7 +3,6 @@
   578  docker container run -p 80:8080 -it abilists:v0.4.1 bash
   582  docker images
   583  docker rmi c5b4ca660ac5
-  585  docker rmi c5b4ca660ac5
   586  docker ps -a
   587  docker stop 083359fdc25c
   588  docker ps -a
@@ -19,3 +18,14 @@
   599  docker container run -p 80:8080 -it abilists:v0.4.1
   600  docker rm -v $(docker ps -a -q -f status=exited)
   docker pull tomcat:8.5.50-jdk8-openjdk
+  
+  
+  $ docker ps -a
+  $ docker rm -v $(docker ps -a -q -f status=exited)
+  $ docker rm -v $(docker ps -a -q -f status=created)
+  
+  docker build -t abilists/tomcat8.5:0.5.0 .
+  
+  
+  // Delete All cache
+  docker system prune -a
