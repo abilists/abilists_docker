@@ -29,3 +29,34 @@
   
   // Delete All cache
   docker system prune -a
+  
+  
+  
+  
+
+  
+  
+  
+  
+Joons-MacBook-Pro:~ njoonk$ docker pull abilists/tomcat8.5:0.5.0
+0.5.0: Pulling from abilists/tomcat8.5
+000eee12ec04: Pull complete 
+2f1dc2bdcfe1: Pull complete 
+c2a806caa98c: Pull complete 
+c5943b75c974: Pull complete 
+34d036bf1b38: Pull complete 
+de3776d05589: Pull complete 
+fdd9b72b2026: Pull complete 
+966a49a19b6f: Pull complete 
+93af49c6dba5: Pull complete 
+b163a16eed8b: Pull complete 
+c22e0459646a: Pull complete 
+09eac8b565a8: Pull complete 
+12eb96856e83: Pull complete 
+038cae0dd85c: Pull complete 
+Digest: sha256:d44f5e7b78f0fcc3e6ba9f3e4d57621d1c59743032419ab3618fb2568342f507
+Status: Downloaded newer image for abilists/tomcat8.5:0.5.0
+docker.io/abilists/tomcat8.5:0.5.0
+
+Joons-MacBook-Pro:~ njoonk$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.5.0
+afe4106dc4a9c7ec23bbff3fd15b5153ebdf056c762786401a557e57e46171c5
