@@ -38,7 +38,7 @@
   
   
   
-Joons-MacBook-Pro:~ njoonk$ docker pull abilists/tomcat8.5:0.5.0
+$ docker pull abilists/tomcat8.5:0.5.0
 0.5.0: Pulling from abilists/tomcat8.5
 000eee12ec04: Pull complete 
 2f1dc2bdcfe1: Pull complete 
@@ -58,5 +58,5 @@ Digest: sha256:d44f5e7b78f0fcc3e6ba9f3e4d57621d1c59743032419ab3618fb2568342f507
 Status: Downloaded newer image for abilists/tomcat8.5:0.5.0
 docker.io/abilists/tomcat8.5:0.5.0
 
-Joons-MacBook-Pro:~ njoonk$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.5.0
+$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.5.0
 afe4106dc4a9c7ec23bbff3fd15b5153ebdf056c762786401a557e57e46171c5
