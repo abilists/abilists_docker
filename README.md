@@ -34,7 +34,7 @@ $ docker pull abilists/tomcat8.5:0.7.0
 **How to run the image on Docker.**
 
 ```
-$ docker container run -d -p 80:8080 -v ~/.abilists:/tomcat/.abilists abilists/tomcat8.5:0.7.0
+$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.7.0
 ```
 ---
 
@@ -80,4 +80,4 @@ $ docker stop <CONTAINER ID>
 ## Docker repository for Abilists
 ** URL **
 
-https://hub.docker.com/repository/docker/abilists/tomcat8.5
+https://hub.docker.com/r/abilists/tomcat8.5

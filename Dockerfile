@@ -1,7 +1,6 @@
 FROM tomcat:8.5.50-jdk8-openjdk-slim
 MAINTAINER joon.kim@abilists.com
-
-# 
+ 
 VOLUME ~/.abilists
 
 ENV TZ=Asia/Seoul
@@ -13,7 +12,7 @@ RUN apt-get -y install wget
 RUN useradd -d /home/tomcat -m tomcat
 RUN chown -R tomcat.tomcat /usr/local/tomcat
 
-VOLUME ~/.abilists
+#VOLUME ~/.abilists
 
 RUN wget https://github.com/abilists/abilists_client/raw/master/webapps/ROOT.war
 
