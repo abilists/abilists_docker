@@ -1,6 +1,7 @@
 FROM tomcat:8.5.50-jdk8-openjdk-slim
 MAINTAINER joon.kim@abilists.com
 
+# 
 VOLUME ~/.abilists
 
 ENV TZ=Asia/Seoul
@@ -9,7 +10,8 @@ RUN apt-get update
 RUN apt-get -y install wget
 
 #RUN adduser --disabled-password --gecos "" abil_tomcat
-#RUN chown -R abil_tomcat.abil_tomcat /usr/local/tomcat
+RUN useradd -d /home/tomcat -m tomcat
+RUN chown -R tomcat.tomcat /usr/local/tomcat
 
 VOLUME ~/.abilists
 

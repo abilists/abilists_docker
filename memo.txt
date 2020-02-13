@@ -24,14 +24,15 @@
   $ docker rm -v $(docker ps -a -q -f status=exited)
   $ docker rm -v $(docker ps -a -q -f status=created)
   
-  docker build -t abilists/tomcat8.5:0.5.0 .
+  docker build -t abilists/tomcat8.5:0.7.0 .
   
   
   // Delete All cache
   docker system prune -a
   
   
-  
+  docker build -t abilists/tomcat8.5:0.7.0 .
+  docker container run -d -p 80:8080 -v ~/.abilists:/tomcat/.abilists abilists/tomcat8.5:0.7.0
   
 
   
