@@ -1,10 +1,10 @@
 # abilists_docker
 This is a docker file to build image of Docker.
 
-## Share the image of docker for Abilists. Version 0.7.0
+## Share the image of docker for Abilists. Version 0.7.7
 
 ```
-$ docker push abilists/tomcat8.5:0.7.0
+$ docker push abilists/tomcat8.5:0.7.7
 The push refers to repository [docker.io/abilists/tomcat8.5]
 9e1794b454f7: Pushed 
 e1eba8915abe: Pushed 
@@ -28,13 +28,13 @@ dfc3c372b2bb: Layer already exists
 **Pulling the Docker image of Abilists**
 
 ```
-$ docker pull abilists/tomcat8.5:0.7.0
+$ docker pull abilists/tomcat8.5:0.7.7
 ```
 
 **How to run the image on Docker.**
 
 ```
-$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.7.0
+$ docker container run -d -p 80:8080 -v ~/.abilists:/home/tomcat/.abilists abilists/tomcat8.5:0.7.7
 ```
 ---
 
@@ -43,13 +43,13 @@ $ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tom
 **Saving the Docker image of Abilists**
 
 ```
-$ docker save --output docker-abilists-tomcat8.5-0.5.0.tar abilists/tomcat8.5:v0.5.0
+$ docker save --output docker-abilists-tomcat8.5-0.7.7.tar abilists/tomcat8.5:v0.7.7
 ```
 
 **Loading the Docker image of Abilists**
 
 ```
-$ docker load --input ./images/docker-abilists-tomcat8.5-0.5.0.tar
+$ docker load --input ./images/docker-abilists-tomcat8.5-0.7.7.tar
 ```
 
 **troubleshooting**
