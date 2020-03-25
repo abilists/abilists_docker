@@ -34,7 +34,7 @@ $ docker pull abilists/tomcat8.5:0.7.7
 **How to run the image on Docker.**
 
 ```
-$ docker container run -d -p 80:8080 -v ~/.abilists:/home/tomcat/.abilists abilists/tomcat8.5:0.7.7
+$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.7.7
 ```
 ---
 
@@ -75,6 +75,11 @@ Untagged: abilists/tomcat8.5:0.7.0
 ```
 $ docker ps -a
 $ docker stop <CONTAINER ID>
+```
+
+** How to check the log file on Abilists **
+```
+docker exec -i -t <CONTAINER ID> /bin/bash
 ```
 
 ## Docker repository for Abilists
