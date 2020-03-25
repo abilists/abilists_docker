@@ -86,6 +86,7 @@ Untagged: abilists/tomcat8.5:0.7.0
 ```
 $ docker ps -a
 $ docker stop <CONTAINER ID>
+$ docker start <CONTAINER ID>
 ```
 
 **How to check the log file on Abilists**
