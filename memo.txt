@@ -29,7 +29,7 @@
   
   // Delete All cache
   docker system prune -a
-  docker build -t abilists/tomcat8.5:0.7.7 .
+  docker build -t abilists/tomcat8.5:0.8.9 .
   docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.7.7
   
 

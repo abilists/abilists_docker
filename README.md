@@ -2,10 +2,10 @@
 
 This is a docker file to build image of Docker.
 
-##Share the image of docker for Abilists. Version 0.7.7
+##Share the image of docker for Abilists. Version 0.8.9
 
 ```
-$ docker push abilists/tomcat8.5:0.7.7
+$ docker push abilists/tomcat8.5:0.8.9
 The push refers to repository [docker.io/abilists/tomcat8.5]
 9e1794b454f7: Pushed 
 e1eba8915abe: Pushed 
@@ -31,17 +31,17 @@ dfc3c372b2bb: Layer already exists
 **Pulling the Docker image of Abilists**
 
 ```
-$ docker pull abilists/tomcat8.5:0.7.7
+$ docker pull abilists/tomcat8.5:0.8.9
 ```
 
 **How to run the image on Docker.**
 * Linux
 ```
-$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.7.7
+$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.8.9
 ```
 * Windows
 ```
-$ docker container run -d -p 80:8080 -v /Users/<user home>/.abilists:/root/.abilists abilists/tomcat8.5:0.7.7
+$ docker container run -d -p 80:8080 -v /Users/<user home>/.abilists:/root/.abilists abilists/tomcat8.5:0.8.9
 ```
 *user home is your account name
 
@@ -53,13 +53,13 @@ You should follow the below if you want to have a image of docker on your local 
 **Saving the Docker image of Abilists**
 
 ```
-$ docker save --output docker-abilists-tomcat8.5-0.7.7.tar abilists/tomcat8.5:v0.7.7
+$ docker save --output docker-abilists-tomcat8.5-0.8.9.tar abilists/tomcat8.5:0.8.9
 ```
 
 **Loading the Docker image of Abilists**
 
 ```
-$ docker load --input ./images/docker-abilists-tomcat8.5-0.7.7.tar
+$ docker load --input ./images/docker-abilists-tomcat8.5-0.8.9.tar
 ```
 
 ## troubleshooting
