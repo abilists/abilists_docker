@@ -69,7 +69,7 @@ $ docker: Error response from daemon: driver failed programming external connect
 ```
 $docker container ls
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
-44efe95120d4        abilists:v0.4.1     "catalina.sh run"   15 minutes ago      Up 15 minutes       0.0.0.0:80->8080/tcp   epic_williams
+44efe95120d4        abilists:0.8.9     "catalina.sh run"   15 minutes ago      Up 15 minutes       0.0.0.0:80->8080/tcp   epic_williams
 $ docker stop 44efe95120d4
 ```
 
@@ -77,8 +77,8 @@ $ docker rmi 5107cd1c6eca
 Error response from daemon: conflict: unable to delete 5107cd1c6eca (must be forced) - image is referenced in multiple repositories
 
 ```
-$ docker rmi abilists/tomcat8.5:0.7.0
-Untagged: abilists/tomcat8.5:0.7.0
+$ docker rmi abilists/tomcat8.5:0.8.9
+Untagged: abilists/tomcat8.5:0.8.9
 ```
 
 **How to stop the image on Docker.**
