@@ -2,28 +2,25 @@
 
 This is a docker file to build image of Docker.
 
-##Share the image of docker for Abilists. Version 0.9.7
+##Share the image of docker for Abilists. Version 1.0.0
 
 ```
-$ docker push abilists/tomcat8.5:0.9.7
+$ docker push abilists/tomcat8.5:1.0.0
 The push refers to repository [docker.io/abilists/tomcat8.5]
-9e1794b454f7: Pushed 
-e1eba8915abe: Pushed 
-0768c91a16cd: Pushed 
-b7cbd020684b: Pushed 
-0c6ab6a37f9e: Pushed 
-a25cb9b66eb3: Pushed 
-223b1280686b: Pushed 
-c6d2ad4739b3: Layer already exists 
-209f36d6cd03: Layer already exists 
-a25112f3c79b: Layer already exists 
-60cd002d6b99: Layer already exists 
-8ae4e7554402: Layer already exists 
-2492b0ca57f8: Layer already exists 
-fbc3b2dba006: Layer already exists 
-dfc3c372b2bb: Layer already exists 
-831c5620387f: Layer already exists 
-0.7.0: digest: sha256:295c073a95df7b150f8438900cc98908ba03e4b1617cd83bb9ed1cd0cd51f837 size: 3674
+df2dac1a5eb9: Pushed 
+0cb305b22bb6: Pushed 
+2996efa68b8b: Layer already exists 
+676cb4ebf208: Pushed 
+f940841f75c5: Pushed 
+913c1e1d76c9: Pushed 
+3d2a647fd045: Layer already exists 
+52aa285d4c8e: Layer already exists 
+d16123a2d4e2: Layer already exists 
+081243ed7bf5: Layer already exists 
+f83c0d7e7b4a: Layer already exists 
+64d7a6e6c92c: Layer already exists 
+488dfecc21b1: Layer already exists 
+1.0.0: digest: sha256:e8331c9eb076f432960a3a972a3ae134fec67de3f2c0f718f0431c2aa6e256a1 size: 3053
 ```
 
 ## How to use
@@ -31,17 +28,17 @@ dfc3c372b2bb: Layer already exists
 **Pulling the Docker image of Abilists**
 
 ```
-$ docker pull abilists/tomcat8.5:0.9.7
+$ docker pull abilists/tomcat8.5:1.0.0
 ```
 
 **How to run the image on Docker.**
 * Linux
 ```
-$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:0.9.7
+$ docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:1.0.0
 ```
 * Windows
 ```
-$ docker container run -d -p 80:8080 -v /Users/<user home>/.abilists:/root/.abilists abilists/tomcat8.5:0.9.7
+$ docker container run -d -p 80:8080 -v /Users/<user home>/.abilists:/root/.abilists abilists/tomcat8.5:1.0.0
 ```
 *user home is your account name
 
@@ -53,13 +50,13 @@ You should follow the below if you want to have a image of docker on your local 
 **Saving the Docker image of Abilists**
 
 ```
-$ docker save --output docker-abilists-tomcat8.5-0.9.7.tar abilists/tomcat8.5:0.9.7
+$ docker save --output docker-abilists-tomcat8.5-1.0.0.tar abilists/tomcat8.5:1.0.0
 ```
 
 **Loading the Docker image of Abilists**
 
 ```
-$ docker load --input ./images/docker-abilists-tomcat8.5-0.9.7.tar
+$ docker load --input ./images/docker-abilists-tomcat8.5-1.0.0.tar
 ```
 
 ## troubleshooting
@@ -69,7 +66,7 @@ $ docker: Error response from daemon: driver failed programming external connect
 ```
 $docker container ls
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS                  NAMES
-44efe95120d4        abilists:0.9.7     "catalina.sh run"   15 minutes ago      Up 15 minutes       0.0.0.0:80->8080/tcp   epic_williams
+44efe95120d4        abilists:1.0.0     "catalina.sh run"   15 minutes ago      Up 15 minutes       0.0.0.0:80->8080/tcp   epic_williams
 $ docker stop 44efe95120d4
 ```
 
@@ -77,8 +74,8 @@ $ docker rmi 5107cd1c6eca
 Error response from daemon: conflict: unable to delete 5107cd1c6eca (must be forced) - image is referenced in multiple repositories
 
 ```
-$ docker rmi abilists/tomcat8.5:0.9.7
-Untagged: abilists/tomcat8.5:0.9.7
+$ docker rmi abilists/tomcat8.5:1.0.0
+Untagged: abilists/tomcat8.5:1.0.0
 ```
 
 **How to stop the image on Docker.**
