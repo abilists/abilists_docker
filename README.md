@@ -5,7 +5,7 @@ This is a docker file to build image of Docker.
 ##Share the image of docker for Abilists. Version 1.3.5
 
 ```
-$ docker push abilists/tomcat8.5:1.3.5
+$ docker push abilists/tomcat8.5:1.7.0.0
 The push refers to repository [docker.io/abilists/tomcat8.5]
 df2dac1a5eb9: Pushed 
 0cb305b22bb6: Pushed 

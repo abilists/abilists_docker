@@ -26,10 +26,11 @@
   
   docker build -t abilists/tomcat8.5:1.0.0 .
   
-  
+  // how to build and push to Docker site
   // Delete All cache
   docker system prune -a
   docker build -t abilists/tomcat8.5:1.0.0 .
+  docker push abilists/tomcat8.5:1.7.0.0
   docker container run -d -p 80:8080 -v ~/.abilists:/root/.abilists abilists/tomcat8.5:1.0.0
 
 
